@@ -51,5 +51,5 @@ func UploadHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Write([]byte(fmt.Sprintf("Converted content:\n%s", converted)))
+	w.Write([]byte(fmt.Sprintf("Original: %s\nConverted content:\n%s", inputData, converted)))
 }
